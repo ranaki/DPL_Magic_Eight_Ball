@@ -1,0 +1,135 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+  ========================================
+  Custom styles
+  ========================================
+*/
+body {
+  background: #0f2342;
+  font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /*font-weight: 300; 
+  font-size: 16px;
+  line-height: 22px;
+  font-family: "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+}
+
+/*h1 {
+  text-align: center;
+  color: white;
+  font-weight: 700;
+
+}*/
+/*
+  ========================================
+  Grid
+  ========================================
+*/
+.container {
+    margin: 40 auto 0 auto;
+    width: 600px;
+    border: 3px solid blue;
+    border-radius: 25px;
+}
+.ball-container {
+    background-color: white;
+}
+.question-container {
+    margin: 10 auto 0 auto;
+    width: 600px;
+    border: 3px solid blue;
+    border-radius: 5px;
+    background-color: white;
+}
+
+/*
+  ========================================
+  Ball
+  ========================================
+*/
+.the-ball {
+    margin: 10px auto 10 auto;
+    width: 500px;
+    height: 500px;
+    border: 3px solid red;
+    border-radius: 50%;
+    background-color: black;
+}
+.the-ball-title {
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    font-size: 25px;
+    /*border: 2px solid green;*/
+    margin: 30% auto 0 auto;
+}
+
+.the-ball-question-title {
+    text-align: center;
+    color: ghostwhite;
+    font-weight: 300;
+    font-size: 15px;
+    border-bottom: 1px solid silver;
+    margin: 40px auto 0 auto;
+    width: 90%;
+    padding-bottom: 20px;
+}
+
+/*
+  ========================================
+  Answers
+  ========================================
+*/
+.ball-answers {
+    border: 1px solid blue;
+    background-color: white;
+    width: 200px;
+    margin: 30px auto;
+
+}
