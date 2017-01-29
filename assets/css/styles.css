@@ -113,13 +113,22 @@ body {
 
 .the-ball-question-title {
     text-align: center;
-    color: ghostwhite;
-    font-weight: 300;
-    font-size: 15px;
+    /*color: ghostwhite;*/
+    /*font-weight: 300;*/
+    /*font-size: 15px;*/
     border-bottom: 1px solid silver;
     margin: 40px auto 0 auto;
     width: 90%;
     padding-bottom: 20px;
+}
+#ball-question-input {
+    width: 70%;
+    text-align: center;
+    font-size: 15px;
+    color: silver;
+    background-color: black;
+    padding: 4px 0 2px 0;
+    border: 0;
 }
 .question-button-div {
     margin: 10px auto 0 auto;
@@ -131,22 +140,7 @@ body {
     background-color: #51bcb3;
     font-weight: 300;
     font-size: 18px;
-
 }
-/*.question-button {
-    margin: 10px auto 0 auto;
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 5px 20px;
-    text-align: center;
-    text-decoration: none;
-    width: 50%;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;*/
-    
-/*}*/
 
 /*
   ========================================
@@ -157,6 +151,7 @@ body {
     border: 1px solid black;
     background-color: #295edb;
     width: 200px;
+    height: 30px;
     margin: 30px auto;
     text-align: center;
     border-radius: 10px;

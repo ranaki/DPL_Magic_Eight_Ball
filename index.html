@@ -14,14 +14,16 @@
                     <h1>Magic Eight Ball</h1>
                 </div>
                 <div class="the-ball-question-title">
-                    <h4 id="question-text">Question</h4>
+                    <form class="question-form">
+                        <input id="ball-question-input" type="text" name="myQuestion" value="" placeholder="Type question here" required>
+                    </form>
                 </div>
-                <div class="question-button-div" onclick="popQuestion()">
+                <div class="question-button-div" onclick="getQuestion()">
                     <h3>Ask Question<h3>
                     <!--<button class="question-button">Ask Question</button>-->
                 </div>
                 <div class="ball-answers">
-                    <p>Without a doubt!</p> 
+                    <p id="answer-p"></p> 
                 </div>
             </div>
         </section>
