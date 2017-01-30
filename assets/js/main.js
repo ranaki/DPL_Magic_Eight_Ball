@@ -21,7 +21,12 @@ function getQuestion() {
         return;
     }
 
-    checkQuestionForCustom(myQuestion);
+    if (!checkQuestionForCustom(myQuestion)) 
+    { 
+        // debugger;
+        document.getElementById("ball-question-input").value = '';
+        return;
+    };
     // debugger;
     var answersConcat = answers.concat(customAnswers);
     var answer = answersConcat[getRandomAnswerIndex()];
@@ -48,16 +53,19 @@ function checkQuestionForCustom(currQuestion) {
         {
             customAnswers.push(newAnswer);
         }
-        return;
+        return false;
     }
     if (currQuestion.includes("clear_answers")) {
         customAnswers = [];
-        return;
+        return false;
     }
     if (currQuestion.includes("clear_history")) {
+        // debugger;
         questionAnswerHist = [];
-        return;
+        addToHistory();
+        return false;
     }
+    return true;
 }
 function addToHistory(){
     //for each item in history array make list
