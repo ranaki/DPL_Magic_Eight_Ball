@@ -159,3 +159,19 @@ body {
     padding: 5px 20px;
 
 }
+/*
+  ========================================
+  History
+  ========================================
+*/
+.history-container {
+    margin: 40 auto 0 auto;
+    width: 600px;
+    border: 3px solid blue;
+    border-radius: 25px;
+    background-color: white;
+    text-align: center;
+}
+.history-container ul{
+    width: 100%;
+}
