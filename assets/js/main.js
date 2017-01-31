@@ -13,6 +13,7 @@ var answers = ["Yup",
 var customAnswers = [];
 
 function getQuestion() {
+
     var myQuestion = document.getElementById("ball-question-input").value;
     
     if (myQuestion.trim() === '') 
